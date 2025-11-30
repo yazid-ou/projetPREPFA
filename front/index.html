@@ -66,40 +66,6 @@
         </div>
     </div>
 
-    <script>
-        function togglePassword() {
-            const passwordInput = document.getElementById('password');
-            const toggleButton = document.querySelector('.toggle-password');
-            
-            if (passwordInput.type === 'password') {
-                passwordInput.type = 'text';
-                toggleButton.textContent = '🙈';
-            } else {
-                passwordInput.type = 'password';
-                toggleButton.textContent = '👁️';
-            }
-        }
-
-        function handleLogin(event) {
-            event.preventDefault();
-            
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            const remember = document.getElementById('remember').checked;
-
-            // Ici vous pouvez ajouter votre logique de connexion
-            console.log('Tentative de connexion:', {
-                email: email,
-                remember: remember
-            });
-
-            // Exemple de validation basique
-            if (email && password) {
-                alert('Connexion en cours...\n\nEmail: ' + email + '\nSe souvenir: ' + (remember ? 'Oui' : 'Non'));
-                // Vous pouvez rediriger vers une autre page ou appeler une API ici
-                // window.location.href = '/dashboard';
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
